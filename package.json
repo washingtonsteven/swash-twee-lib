@@ -1,0 +1,9 @@
+{
+  "name": "swash-twee-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "extwee": "^2.0.6"
+  }
+}
