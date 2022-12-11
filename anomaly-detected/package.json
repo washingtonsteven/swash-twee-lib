@@ -1,0 +1,9 @@
+{
+  "name": "anomaly-detected",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "extwee -c -i ./index.twee -s ../storyformats/sugarcube.js -o build/index.html"
+  }
+}
