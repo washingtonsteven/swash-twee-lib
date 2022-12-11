@@ -4,13 +4,13 @@
   "format": "SugarCube",
   "format-version": "2.36.1",
   "zoom": 1,
-  "start": "StoryTitle"
+  "start": "Start"
 }
 
 :: StoryTitle
 ANOMALY DETECTED
 
-:: Anomaly Detected {"position":"125,275","size":"100,100"}
+:: Start {"position":"125,275","size":"100,100"}
 @@.message;
 <<type 60ms start 750ms>>ANOMALY DETECTED<</type>>
 @@
@@ -19,9 +19,9 @@ ANOMALY DETECTED
 <<type 10ms>>You are spawled out on the ground, which is made up of broken and cracked tar and concrete, with trepidacious patches of grass and weeds growing in between.<</type>>
 <<type 10ms>>Streaks of starlight wheel over head, through the spaces between the silhouettes of buildings. You take in the sight before attempting to stand.<</type>>
 <<type 10ms>>Your joint servos whirr in unison, pushing yourself off the ground. You step to balance yourself, and find yourself tumbling back down to the ground with a shout. Your chassis makes a loud @@.x;crack@@ against the jagged ground, but the rigid material holds.<</type>>
-<<type 10ms>>You turn to look around and find an array of sparking wires where your shin should be. It doesn&#39;t take long to look toward the opening of the alley, where the matching part is laying, admist a constellation of plasticine shards.<</type>>
+<<type 10ms>>You turn to look around and find an array of sparking wires where your shin should be. It doesn't take long to look toward the opening of the alley, where the matching part is laying, admist a constellation of plasticine shards.<</type>>
 <<script>>
-$(document).on(&quot;:typingcomplete&quot;, function() {
+$(document).on(":typingcomplete", function() {
 	// TODO: show the below link, <<append>>? will that still have twine autocomplete?
 })
 <</script>>
@@ -29,10 +29,10 @@ $(document).on(&quot;:typingcomplete&quot;, function() {
 <</timed>>
 
 :: StoryInterface {"position":"100,100","size":"100,100"}
-&lt;div id=&quot;interface&quot;&gt;
-	&lt;div id=&quot;prev-passages&quot;&gt;&lt;/div&gt;
-	&lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+<div id="interface">
+	<div id="prev-passages"></div>
+	<div id="passages"></div>
+</div>
 
 :: Street {"position":"125,400","size":"100,100"}
 @@.message;

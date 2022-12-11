@@ -4,6 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "extwee -c -i ./index.twee -s ../storyformats/sugarcube.js -o build/index.html"
+    "build": "extwee -c -i ./index.twee -s ../story-formats/sugarcube-2/format.js -o build/index.html"
   }
 }
