@@ -5,7 +5,10 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "extwee": "^2.0.6"
+    "extwee": "^2.0.6",
+    "serve": "^14.1.2"
   },
-  "workspaces": [ "anomaly-detected" ]
+  "workspaces": [
+    "anomaly-detected"
+  ]
 }

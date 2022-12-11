@@ -43,3 +43,9 @@ there are also ways to do this in [git](https://docs.github.com/en/get-started/g
 ```sh
 git config --global core.autocrlf true
 ```
+
+### Server issues on Android
+
+normally, i would use `serve` to, well, serve up the html for a twine game. however, developing on android (w/ termux), i wasn't able to get `serve` working (see termux/termux-packages#10868).
+
+instead, i'm using `live-server` which is globally installed: `npm install -g live-server` and run with `live-server ./foldername`. should work well enough.
