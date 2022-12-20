@@ -3,6 +3,7 @@
   "ifid": "7F808773-D621-471C-9082-14C159049351",
   "format": "SugarCube",
   "format-version": "2.36.1",
+  "formatVersion": "2.36.1",
   "zoom": 1,
   "start": "Start"
 }

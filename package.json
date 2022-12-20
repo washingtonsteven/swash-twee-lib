@@ -4,11 +4,17 @@
   "main": "index.js",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "extwee": "^2.0.6",
-    "serve": "^14.1.2"
+    "glob": "^8.0.3",
+    "serve": "^14.1.2",
+    "yargs": "^17.6.2"
   },
   "workspaces": [
     "anomaly-detected"
-  ]
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
