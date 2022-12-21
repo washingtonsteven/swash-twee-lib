@@ -98,7 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="ANOMALY DETECTED" startnode="3" creator="extwee" creator-version="2.0.6" ifid="7F808773-D621-471C-9082-14C159049351" zoom="1" format="SugarCube" format-version="2.36.1" options hidden>
+	<tw-storydata name="ANOMALY DETECTED" startnode="1" creator="extwee" creator-version="2.0.6" ifid="7F808773-D621-471C-9082-14C159049351" zoom="1" format="SugarCube" format-version="2.36.1" options hidden>
 	<style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Share Tech Mono*/
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
@@ -188,8 +188,8 @@ Macro.add("advance", {
 // v1.0.1, 2022-07-21, 3bdbdfbe5ae47a46e4f4e52766d78701939ae9a6
 ;!function(){"use strict";var n=["a",":button",'*[role="button"]',".continue-macro-ignore","#ui-bar","#ui-dialog"],t=0;function o(){$(document).on("click.continue-macro keyup.continue-macro",n.join(", "),(function(n){n.stopPropagation()}))}function e(){if(State.length>0)return!1;var t=[].slice.call(arguments).flatten();return n=n.concat(t),!0}function c(n,o){var e=function(){var n="."+Date.now().toString(36)+"-"+t;return t++,n}();if(o&&"function"==typeof o){var c="click.continue-macro"+e;n&&(c=c+" keyup.continue-macro"+e),$(document).one(c,(function(){o.call(),$(document).off(e)}))}}prehistory["%%continue-expiration"]=function(){t=0},$(document).one(":passagerender",(function(){o()})),Macro.add("ignore",{handler:function(){if(!e(this.args))return this.error("the <<ignore>> macro should only be run from StoryInit or equivalent.")}}),Macro.add("cont",{tags:null,handler:function(){var n,t=this.args.includes("append"),o=this.args.includesAny("key","keypress","press","button"),e=this.payload[0].contents;t&&(n=$(document.createElement("span")).addClass("macro-"+this.name).appendTo(this.output)),c(o,this.createShadowWrapper((function(){t&&n&&n instanceof $?n.wiki(e):$.wiki(e)})))}}),setup.cont=c,setup.cont.ignore=e,setup.cont.reset=function(){var t=[].slice.call(arguments).flatten();n=n.concat(t),$(document).off(".continue-macro"),o()},window.cont=window.cont||setup.cont}();
 // end continue.min.js</script>
-	<tw-passagedata pid="3" name="Start" position="125,275" size="100,100" >@@.message;
-&lt;&lt;type 60ms start 750ms&gt;&gt;ANOMALY DETECTED&lt;&lt;/type&gt;&gt;
+	<tw-passagedata pid="1" name="Start" position="125,275" size="100,100" >@@.message;
+&lt;&lt;type 60ms start 750ms&gt;&gt;ANOMALY DETECTEDA&lt;&lt;/type&gt;&gt;
 @@
 &lt;&lt;timed 2s&gt;&gt;\
 &lt;&lt;type 10ms&gt;&gt;You are awakened by the error message filling your vision, surprising you slightly. The message retreats to a corner of the screen, revealing the alley of an Empty City in front of you.&lt;&lt;/type&gt;&gt;
@@ -204,11 +204,7 @@ $(document).on(&quot;:typingcomplete&quot;, function() {
 &lt;&lt;/script&gt;&gt;
 [[Crawl to get your leg|Street]]
 &lt;&lt;/timed&gt;&gt;</tw-passagedata>
-	<tw-passagedata pid="4" name="StoryInterface" position="100,100" size="100,100" >&lt;div id=&quot;interface&quot;&gt;
-	&lt;div id=&quot;prev-passages&quot;&gt;&lt;/div&gt;
-	&lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata>
-	<tw-passagedata pid="5" name="Street" position="125,400" size="100,100" >@@.message;
+	<tw-passagedata pid="2" name="Street" position="125,400" size="100,100" >@@.message;
 &lt;&lt;type 60ms start 750ms&gt;&gt;CAUTION. ANOMALY INTENSIFIES.&lt;&lt;/type&gt;&gt;
 @@
 &lt;&lt;timed 2s&gt;&gt;\
@@ -216,6 +212,10 @@ $(document).on(&quot;:typingcomplete&quot;, function() {
 &lt;&lt;type 10ms&gt;&gt;Picking up your leg, you present it to the stump still attached to you, and you feel repair servos whirring as bond-gel flows through your circuits, cascading down the exposed wires. You smash the leg up against you, and feel the flash of hot metal as the circuits recombine. The synthetic muscles twitch and spasm painfully for a moment, before you regain control and flex them, reacquainting yourself with the functionality.&lt;&lt;/type&gt;&gt;
 &lt;&lt;type 10ms&gt;&gt;It only takes a few steps before you are able to walk mostly normally. The seam where the leg was severed is obvious to thecareful observer, but for all intents and purposes, you are good as new.&lt;&lt;/type&gt;&gt;
 &lt;&lt;/timed&gt;&gt;</tw-passagedata>
+	<tw-passagedata pid="6" name="StoryInterface" position="100,100" size="100,100" >&lt;div id=&quot;interface&quot;&gt;
+	&lt;div id=&quot;prev-passages&quot;&gt;&lt;/div&gt;
+	&lt;div id=&quot;passages&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata>
 </tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */

@@ -1,0 +1,27 @@
+:: Start {"position":"125,275","size":"100,100"}
+@@.message;
+<<type 60ms start 750ms>>ANOMALY DETECTEDA<</type>>
+@@
+<<timed 2s>>\
+<<type 10ms>>You are awakened by the error message filling your vision, surprising you slightly. The message retreats to a corner of the screen, revealing the alley of an Empty City in front of you.<</type>>
+<<type 10ms>>You are spawled out on the ground, which is made up of broken and cracked tar and concrete, with trepidacious patches of grass and weeds growing in between.<</type>>
+<<type 10ms>>Streaks of starlight wheel over head, through the spaces between the silhouettes of buildings. You take in the sight before attempting to stand.<</type>>
+<<type 10ms>>Your joint servos whirr in unison, pushing yourself off the ground. You step to balance yourself, and find yourself tumbling back down to the ground with a shout. Your chassis makes a loud @@.x;crack@@ against the jagged ground, but the rigid material holds.<</type>>
+<<type 10ms>>You turn to look around and find an array of sparking wires where your shin should be. It doesn't take long to look toward the opening of the alley, where the matching part is laying, admist a constellation of plasticine shards.<</type>>
+<<script>>
+$(document).on(":typingcomplete", function() {
+	// TODO: show the below link, <<append>>? will that still have twine autocomplete?
+})
+<</script>>
+[[Crawl to get your leg|Street]]
+<</timed>>
+
+:: Street {"position":"125,400","size":"100,100"}
+@@.message;
+<<type 60ms start 750ms>>CAUTION. ANOMALY INTENSIFIES.<</type>>
+@@
+<<timed 2s>>\
+<<type 10ms>>Your vision is overtaken by another message, partially blinding you again. A static buzz clings to your bones as you hop to the street, and retrieve your leg.<</type>>
+<<type 10ms>>Picking up your leg, you present it to the stump still attached to you, and you feel repair servos whirring as bond-gel flows through your circuits, cascading down the exposed wires. You smash the leg up against you, and feel the flash of hot metal as the circuits recombine. The synthetic muscles twitch and spasm painfully for a moment, before you regain control and flex them, reacquainting yourself with the functionality.<</type>>
+<<type 10ms>>It only takes a few steps before you are able to walk mostly normally. The seam where the leg was severed is obvious to thecareful observer, but for all intents and purposes, you are good as new.<</type>>
+<</timed>>

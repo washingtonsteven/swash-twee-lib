@@ -5,6 +5,9 @@ import fs from "fs";
 import path from "path";
 import glob from "glob";
 import { TweeParser, StoryFormatParser, HTMLWriter } from "extwee";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url)) || "";
 
 const { project, output = "./build/index.html" } = yargs(hideBin(process.argv)).argv;
 
@@ -13,10 +16,10 @@ if (!project) {
 	process.exit(1);
 }
 
-const projectDir = path.resolve(project);
+const projectDir = path.resolve(__dirname, "..", project);
 
 if (!fs.existsSync(projectDir)) {
-	console.error(`Project \`${project}\` does not exist.`);
+	console.error(`Project \`${project}\` does not exist. (Looking in ${projectDir})`);
 	process.exit(1);
 }
 
@@ -62,7 +65,7 @@ glob(source, { cwd: projectDir }, (err, files) => {
 
 	const story = TweeParser.parse(tweeSource);
 
-	const storyFormatFile = path.resolve("story-formats", `${story.format.toLowerCase()}-${story.formatVersion?.charAt(0)}`, "format.js");
+	const storyFormatFile = path.resolve(__dirname, "..", "story-formats", `${story.format.toLowerCase()}-${story.formatVersion?.charAt(0)}`, "format.js");
 
 	if (!fs.existsSync(storyFormatFile)) {
 		console.error(`Tried to load ${story.format} v${story.formatVersion} from ${storyFormatFile}, but it doesn't exist.`);

@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "extwee -c -i ./src/index.twee -s ../story-formats/sugarcube-2/format.js -o build/index.html",
+    "build": "node ../bin/build.js --project anomaly-detected",
     "start": "yarn serve ./build",
-	"watch": "nodemon --ext twee --exec yarn build"
+	"watch": "nodemon --ext twee --exec \"yarn build\""
   },
   "tweeConfig": {
 	"source": "./src/**/*.twee"

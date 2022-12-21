@@ -1,0 +1,48 @@
+:: UserStylesheet [stylesheet]
+/* Share Tech Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  	--background: #061A2D; /* dark, grey/blue? */
+  	--text: #ccc;
+	--message-alert-color: #CF5C36; /* flame red */
+}
+
+body { 
+  	background-color: var(--background);
+}
+
+#interface {
+	width: 100%;
+  	padding: 3rem;
+  	max-width: 768px;
+  	margin: 0 auto;
+  	color: var(--text);
+  	height: 100vw;
+  	overflow: hidden;
+}
+
+#prev-passages {
+	opacity: 0.5;
+}
+
+.x {
+	color: var(--message-alert-color);
+  	font-weight: bold;
+}
+
+.message {
+  background-color: var(--message-alert-background);
+  color: var(--message-alert-color);
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  min-height: 2rem;
+  border-radius: 5px;
+  border: solid 1px var(--text);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 3px #333;
+}
