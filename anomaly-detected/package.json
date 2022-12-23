@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ../bin/build.js --project anomaly-detected",
     "start": "yarn serve ./build",
-	"watch": "nodemon --ext twee --exec \"yarn build\""
+	"watch": "nodemon --ext twee --exec \"yarn build && yarn start\""
   },
   "tweeConfig": {
 	"source": "./src/**/*.twee"

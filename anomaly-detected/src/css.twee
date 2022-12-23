@@ -46,3 +46,17 @@ body {
   font-weight: bold;
   box-shadow: 2px 2px 3px #333;
 }
+
+.macro-cont .para {
+	animation: 750ms ease-in both fadeIn;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
